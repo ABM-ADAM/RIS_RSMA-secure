@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ris-rsma-reproducible"
+version = "0.1.0"
+description = "Finite-budget RIS-RSMA secrecy simulation and manuscript figures"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "numpy>=2.0,<3",
+  "casadi>=3.7.2,<3.8",
+  "matplotlib>=3.9,<4",
+]
+
+[project.scripts]
+ris-rsma-campaign = "ris_rsma.campaign:main"
+ris-rsma-figures = "ris_rsma.plot:main"
+ris-rsma-validate = "ris_rsma.validate:run"
+
+[tool.setuptools.packages.find]
+include = ["ris_rsma*"]
