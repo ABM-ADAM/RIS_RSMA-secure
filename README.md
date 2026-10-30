@@ -141,5 +141,4 @@ manuscript is posted.
 
 ## License
 
-No license is granted by this archive; add a license chosen by the rights
-holder before making a public GitHub release.
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
